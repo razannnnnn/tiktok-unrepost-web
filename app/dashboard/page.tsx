@@ -153,14 +153,18 @@ export default function DashboardPage() {
             <span className="font-bold text-white tracking-tight">Unrepost</span>
             {user && (
               <div className="flex items-center gap-2 pl-3 border-l border-white/10">
-                {user.avatar_url && (
+                {user.avatar_url ? (
                   <Image
                     src={user.avatar_url}
                     alt={user.display_name}
                     width={24}
                     height={24}
-                    className="rounded-full"
+                    className="rounded-full object-cover"
                   />
+                ) : (
+                  <div className="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center text-[10px] text-gray-400">
+                    {user.display_name?.charAt(0)}
+                  </div>
                 )}
                 <span className="text-sm text-gray-300">{user.display_name}</span>
               </div>
