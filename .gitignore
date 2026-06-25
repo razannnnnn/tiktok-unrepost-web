@@ -1,0 +1,9 @@
+.env.local
+.env
+node_modules/
+.next/
+.vercel
+.opencode/
+.codegraph/
+.opencode/
+.codegraph/
