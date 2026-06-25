@@ -3,7 +3,7 @@ export interface TikTokUser {
   union_id: string
   avatar_url: string
   display_name: string
-  username: string
+  username?: string
 }
 
 export interface TikTokVideo {

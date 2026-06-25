@@ -75,7 +75,7 @@ export async function exchangeCodeForToken(code: string, codeVerifier: string): 
  */
 export async function getTikTokUser(accessToken: string, openId: string): Promise<TikTokUser> {
   const res = await fetch(
-    `${TIKTOK_API_BASE}/user/info/?fields=open_id,union_id,avatar_url,display_name,username`,
+    `${TIKTOK_API_BASE}/user/info/?fields=open_id,union_id,avatar_url,display_name`,
     {
       headers: {
         Authorization: `Bearer ${accessToken}`,
