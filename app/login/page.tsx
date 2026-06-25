@@ -104,6 +104,16 @@ function LoginContent() {
         <p className="text-center text-xs text-gray-600 mt-6">
           Token disimpan terenkripsi di session browser-mu
         </p>
+
+        <div className="flex items-center justify-center gap-4 mt-8 text-xs text-gray-600">
+          <a href="/tos" className="hover:text-gray-400 transition-colors">
+            Ketentuan Layanan
+          </a>
+          <span className="text-gray-700">|</span>
+          <a href="/privacy" className="hover:text-gray-400 transition-colors">
+            Kebijakan Privasi
+          </a>
+        </div>
       </div>
     </main>
   );

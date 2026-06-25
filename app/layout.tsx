@@ -12,8 +12,13 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="id">
-      <body className={`${inter.className} bg-[#010101] text-white min-h-screen`}>
-        {children}
+      <body className={`${inter.className} bg-[#010101] text-white min-h-screen flex flex-col`}>
+        <div className="flex-1">{children}</div>
+        <footer className="py-6 text-center text-xs text-gray-700">
+          <a href="/tos" className="hover:text-gray-400 transition-colors">Ketentuan Layanan</a>
+          <span className="mx-3">|</span>
+          <a href="/privacy" className="hover:text-gray-400 transition-colors">Kebijakan Privasi</a>
+        </footer>
       </body>
     </html>
   )
